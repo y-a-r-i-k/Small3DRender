@@ -1,8 +1,8 @@
-#include "image\image.h"
+#include "image/image.h""
 #include <ostream> 
 
 std::ostream& operator<<(std::ostream& os, const Color& c) {
-  os << "(" << c.r << ", " << c.g << ", " << c.b << ", " << c.a << ")";
+  os << '(' << int(c.r) << ', ' << int(c.g) << ', ' << int(c.b) << ', ' << int(c.a) << ')';
   return os; 
 }
 
